@@ -1,12 +1,11 @@
 <script>
     import img from "$lib/assets/loginImg.png";
-    import { Button } from "$lib/components/shadcn/ui/button";
 </script>
 
 <div class="flex w-screen h-screen linear-bg">
-    <nav class="text-white flex px-10 gap-3 justify-between items-center absolute mt-6 left-1/2 -translate-x-1/2 w-4/5 h-20 rounded-3xl glass">
+    <nav class="text-white flex px-10 py-5 gap-3 justify-between items-center absolute mt-6 left-1/2 -translate-x-1/2 w-4/5 rounded-3xl glass">
         <h2 class="text-2xl font-thin">The Medium Bot</h2>
-        <ul class="flex gap-10 text-sm">
+        <ul class="hidden lg:flex gap-10 text-sm">
             <li class="flex gap-2 items-center">
                 <img class="h-4" src="https://img.icons8.com/ios-filled/48/ffffff/dashboard.png" alt="Dashboard Icon">
                 <a href="#">DASHBOARD</a>
@@ -25,7 +24,11 @@
             </li>
         </ul>
         
-        <button class="py-3 px-12 rounded-xl text-sm bg-blue-600">Free Download</button>
+        <button class="hidden lg:block py-3 px-12 rounded-xl text-sm bg-blue-600">Free Download</button>
+
+        <button class="block lg:hidden h-7">
+            <img class="h-full" src="https://img.icons8.com/ios-filled/200/ffffff/menu--v6.png" alt="">
+        </button>
     </nav>
 
     <div class="w-3/5 h-full">
